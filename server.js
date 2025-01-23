@@ -24,6 +24,13 @@ app.get("/",(req,res)=>{
         message:"op"
     })
 })
+
+app.get("/api/v1",(req,res)=>{
+    console.log(req);
+    res.send({
+        message:"opoooo"
+    })
+})
 app.listen(process.env.PORT,()=>{
     console.log(`Server is Working at ${process.env.PORT}`);
 })
