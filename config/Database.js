@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const connectDatabase = async()=>{
-    mongoose.connect("mongodb://localhost:27017");
+    mongoose.connect(process.env.DATABASE_URL);
 }
 
 module.exports = {connectDatabase}
